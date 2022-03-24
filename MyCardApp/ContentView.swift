@@ -16,7 +16,7 @@ struct ContentView: View {
                 Text("Anna Semichaeva")
                 Text("IOS Developer")
                 
-            }
+            }.foregroundColor(.white)
         }
         
     }
