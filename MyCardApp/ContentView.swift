@@ -14,6 +14,8 @@ struct ContentView: View {
             VStack {
                 Image("ava").resizable().aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/).frame(width: 150, height: 150).clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                 Text("Anna Semichaeva")
+                Text("IOS Developer")
+                
             }
         }
         
