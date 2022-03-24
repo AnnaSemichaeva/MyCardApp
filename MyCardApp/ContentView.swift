@@ -19,7 +19,8 @@ struct ContentView: View {
                 Text("IOS Developer")
                     .font(.headline)
                     .fontWeight(.light)
-                
+                Divider()
+                RoundedRectangle(cornerRadius: 25).frame(height: 50)
             }.foregroundColor(.white)
         }
         
