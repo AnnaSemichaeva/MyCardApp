@@ -21,10 +21,9 @@ struct ContentView: View {
                     .fontWeight(.light)
                 Divider()
                 RoundedRectangle(cornerRadius: 25).padding(.horizontal).frame(height: 50).overlay(HStack {Image(systemName: "phone.fill")
-                        .foregroundColor(Color.black)
                     Text("+79017936211")
                         .foregroundColor(Color.black)
-                })
+                }.foregroundColor(Color(red: 0.10, green: 0.74, blue: 0.61)))
             }.foregroundColor(.white)
         }
         
