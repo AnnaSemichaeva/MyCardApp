@@ -20,11 +20,7 @@ struct ContentView: View {
                     .font(.headline)
                     .fontWeight(.light)
                 Divider()
-                RoundedRectangle(cornerRadius: 25).padding(.horizontal).frame(height: 50).overlay(HStack {Image(systemName: "phone.fill")
-                    Text("+79017936211")
-                        .fontWeight(.semibold)
-                        
-                }.foregroundColor(Color(red: 0.10, green: 0.74, blue: 0.61)))
+                Card(image: String, message: String)
             }.foregroundColor(.white)
         }
         
@@ -34,5 +30,17 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct Card: View {
+    let image: String
+    let message: String
+    var body: some View {
+        RoundedRectangle(cornerRadius: 25).padding(.horizontal).frame(height: 50).overlay(HStack {Image(systemName: "image")
+            Text("+79017936211")
+                .fontWeight(.semibold)
+            
+        }.foregroundColor(Color(red: 0.10, green: 0.74, blue: 0.61)))
     }
 }
