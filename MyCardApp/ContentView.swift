@@ -20,7 +20,9 @@ struct ContentView: View {
                     .font(.headline)
                     .fontWeight(.light)
                 Divider()
-                Card(image: String, message: String)
+                Card(image: "phone.fill", message: "+79017936211")
+                Card(image: "envelope.fill", message: "+79017936211")
+                
             }.foregroundColor(.white)
         }
         
@@ -37,8 +39,8 @@ struct Card: View {
     let image: String
     let message: String
     var body: some View {
-        RoundedRectangle(cornerRadius: 25).padding(.horizontal).frame(height: 50).overlay(HStack {Image(systemName: "image")
-            Text("+79017936211")
+        RoundedRectangle(cornerRadius: 25).padding(.horizontal).frame(height: 50).overlay(HStack {Image(systemName: image)
+            Text(message)
                 .fontWeight(.semibold)
             
         }.foregroundColor(Color(red: 0.10, green: 0.74, blue: 0.61)))
